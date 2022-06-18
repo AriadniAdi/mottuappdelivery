@@ -1,16 +1,23 @@
 # mottudeliveryapp
 
-A new Flutter project.
+MVP de arquitetura modular com testes. 
 
-## Getting Started
+# Para gerar um novo package:
+- Em: dependencies No pubspec.yaml insira o nome da sua package e a path que ela pertence. Como no exemplo:
 
-This project is a starting point for a Flutter application.
+dependencies:
 
-A few resources to get you started if this is your first Flutter project:
+ mottu_app_components:
+ 
+ path: packages/mottu_app_components
+    
+    
+- Depois rode no terminal o comando: ``flutter create --template=package yourpackagename``
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Para atualizar os screenshots existentes para futura comparação:
+- rode no terminal: ``flutter test --update-goldens``
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Para rodar os testes:
+- rode no terminal: ``flutter test``
+
+Na pasta de tests do package você poderá visualizar as evidencias dos testes de screenshot.

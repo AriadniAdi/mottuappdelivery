@@ -14,7 +14,7 @@ void main() {
           Device.tabletLandscape,
         ],
       )
-      ..addScenario(name: 'First Test', widget: makeSUT());
+      ..addScenario(name: 'Home page Screenshot test', widget: makeSUT());
 
     await tester.pumpDeviceBuilder(builder);
 

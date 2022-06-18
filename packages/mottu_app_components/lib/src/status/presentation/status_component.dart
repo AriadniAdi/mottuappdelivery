@@ -13,14 +13,19 @@ class StatusComponent extends StatefulWidget {
 }
 
 class _StatusComponentState extends State<StatusComponent> {
+  bool _status = true;
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         const Text('Online'),
         Switch(
-          value: true,
-          onChanged: (_) {},
+          value: _status,
+          onChanged: (bool newValue) {
+            setState(() {
+              _status = newValue;
+            });
+          },
         ),
       ],
     );

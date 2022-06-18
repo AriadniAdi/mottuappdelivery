@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
-                  color: Colors.blueGrey,
+                  color: Theme.of(context).scaffoldBackgroundColor,
                 ),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
